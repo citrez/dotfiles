@@ -3,6 +3,11 @@ brew install python
 brew install tree
 
 # Install MacOS Applications
-brew cask install google-chrome
-brew cask install spotify
-brew cask install gimp
+brew install --cask google-chrome
+brew install --cask spotify
+brew install --cask gimp
+brew install --cask visual-studio-code
+brew install --cask scroll-reverser
+brew install --cask rectangle
+brew install youtube-dl
+brew install ffmpeg
