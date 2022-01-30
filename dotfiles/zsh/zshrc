@@ -1,8 +1,8 @@
-alias sve="source venv/bin/activate"
-alias youtube-dl-audio= "youtube-dl --extract-audio --audio-format mp3"
-alias edit_zshrc="nano ~/.zshrc && source ~/.zshrc"
-alias eik="code ~/Documents/Everything-I-Know"
+## LOAD OTHER FILES, FOR OGANISING
+source  ~/config_files/dotfiles/zsh/alias.zsh
+
 export repos="~/Documents/repos"
+
 
 # Find and set branch name var if in git repository.
 function git_branch_name()
