@@ -1,7 +1,5 @@
 ## LOAD OTHER FILES, FOR OGANISING
-source  ~/config_files/dotfiles/zsh/alias.zsh
-
-export repos="~/Documents/repos"
+source  ~/dotfiles/zsh/alias.zsh
 
 
 # Find and set branch name var if in git repository.
@@ -17,10 +15,27 @@ function git_branch_name()
 }
 
 # Enable substitution in the prompt.
-setopt prompt_subst
+# setopt prompt_subst
 
 # Config for prompt. PS1 synonym.
-prompt='%2/ $(git_branch_name) > '
+# prompt='%2/ $(git_branch_name) > '
+
+
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
+ 
+parse_git_branch() {
+    git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1]/p'
+}
+ 
+COLOR_DEF='%f'
+COLOR_USR='%F{243}'
+COLOR_DIR='%F{197}'
+COLOR_GIT='%F{39}'
+NEWLINE=$'\n'
+setopt PROMPT_SUBST
+export PROMPT='${COLOR_DIR}%B%~%b ${COLOR_GIT}$(parse_git_branch)${COLOR_DEF} %% '
+
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
