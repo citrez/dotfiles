@@ -24,6 +24,7 @@ alias f='open .'
 alias gs="git status -sb"
 alias ga="git add"
 alias gc="git commit"
+alias glg="git log --graph --decorate --oneline --abbrev-commit"
 
 # Other 
 alias v="vim"
