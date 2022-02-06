@@ -22,6 +22,7 @@ alias f='open .'
  
 #GIT
 alias gs="git status -sb"
+alias gb="git branch -l"
 alias ga="git add"
 alias gc="git commit"
 alias glg="git log --graph --decorate --oneline --abbrev-commit"
