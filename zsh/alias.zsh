@@ -6,7 +6,6 @@ alias sve="source .venv/bin/activate"
 #EDIT
 alias ea="vim ~/dotfiles/zsh/alias.zsh && source ~/dotfiles/zsh/alias.zsh"
 alias ez="vim ~/dotfiles/zsh/zshrc.zsh  && source ~/dotfiles/zsh/zshrc.zsh"
-
 alias eik="code ~/Documents/Everything-I-Know"
 
 #DIRECTORY
@@ -25,6 +24,7 @@ alias .....="cd ../../../.."
 
 
 alias l="ls"
+alias ll="ls -al"
 alias f='open .'
  
 #GIT
