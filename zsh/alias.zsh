@@ -28,3 +28,6 @@ alias glg="git log --graph --decorate --oneline --abbrev-commit"
 
 # Other 
 alias v="vim"
+
+# oodle
+alias awslogin="aws-azure-login -a --no-prompt"
