@@ -16,6 +16,13 @@ alias dr="cd ~/Documents/repos"
 alias dh="cd ~/"
 alias dp="cd ~/my_projects"
 
+# NAVIGATION
+
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
 
 alias l="ls"
 alias f='open .'
@@ -24,7 +31,13 @@ alias f='open .'
 alias gs="git status -sb"
 alias ga="git add"
 alias gc="git commit"
+alias gb="git branch"
 alias glg="git log --graph --decorate --oneline --abbrev-commit"
+
+# My variables
+export repos="~/Documents/repos"
+export myprojects="~/Documents/my-projects"
 
 # Other 
 alias v="vim"
+alias clone_data_flow="git clone git@github.com:oodlefinance/oodle-data-flow.git"
