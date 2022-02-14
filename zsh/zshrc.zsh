@@ -1,6 +1,13 @@
 ## LOAD OTHER FILES, FOR OGANISING
 source  ~/dotfiles/zsh/alias.zsh
 
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+eval "$(pyenv init -)"
+export PATH="$HOME/.poetry/bin:$PATH"
+
+echo "AWS_PROFILE=dev"
+export AWS_PROFILE=dev
+
 
 # Find and set branch name var if in git repository.
 function git_branch_name()
