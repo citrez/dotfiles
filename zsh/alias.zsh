@@ -16,6 +16,10 @@ alias dr="cd ~/Documents/repos"
 alias dh="cd ~/"
 alias dp="cd ~/my_projects"
 
+# NAVIGATION
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
 
 alias l="ls"
 alias f='open .'
