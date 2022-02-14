@@ -40,6 +40,9 @@ export myprojects="~/Documents/my-projects"
 
 # Other 
 alias v="vim"
+
+# oodle
+alias awslogin="aws-azure-login -a --no-prompt"
 alias clone_data_flow="git clone git@github.com:oodlefinance/oodle-data-flow.git"
 
 # poetry
