@@ -17,19 +17,17 @@ alias dh="cd ~/"
 alias dp="cd ~/my_projects"
 
 # NAVIGATION
-
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
-
-
 alias l="ls"
 alias ll="ls -al"
 alias f='open .'
  
 #GIT
 alias gs="git status -sb"
+alias gb="git branch -l"
 alias ga="git add"
 alias gau="git add -u"
 alias gc="git commit"
