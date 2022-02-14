@@ -37,14 +37,9 @@ alias glg="git log --graph --decorate --oneline --abbrev-commit"
 # My variables
 export repos="~/Documents/repos"
 export myprojects="~/Documents/my-projects"
-export ds="~/Documents/repos/oodle-data-science-projects"
+
 # Other 
 alias v="vim"
-
-# oodle
-alias awslogin="aws-azure-login -a --no-prompt"
-alias clone_data_flow="git clone git@github.com:oodlefinance/oodle-data-flow.git"
-
 
 # poetry
 alias pshow="poetry show -v"
@@ -59,4 +54,3 @@ gcm() {
 
 # source other zsh files
 
-source("./oodle_aliases.zsh")
