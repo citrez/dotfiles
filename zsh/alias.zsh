@@ -45,6 +45,7 @@ alias v="vim"
 alias awslogin="aws-azure-login -a --no-prompt"
 alias clone_data_flow="git clone git@github.com:oodlefinance/oodle-data-flow.git"
 
+
 # poetry
 alias pshow="poetry show -v"
 
@@ -55,3 +56,7 @@ gcm() {
     git commit -m"$str"
     echo "git commit -m $str"
 }
+
+# source other zsh files
+
+source("./oodle_aliases.zsh")
