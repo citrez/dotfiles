@@ -37,7 +37,7 @@ alias glg="git log --graph --decorate --oneline --abbrev-commit"
 # My variables
 export repos="~/Documents/repos"
 export myprojects="~/Documents/my-projects"
-
+export ds="~/Documents/repos/oodle-data-science-projects"
 # Other 
 alias v="vim"
 
@@ -47,3 +47,11 @@ alias clone_data_flow="git clone git@github.com:oodlefinance/oodle-data-flow.git
 
 # poetry
 alias pshow="poetry show -v"
+
+# FUNCTIONS
+gcm() {
+    #do things with parameters like $1 such as
+    str="$*"
+    git commit -m"$str"
+    echo "git commit -m $str"
+}
