@@ -1,14 +1,14 @@
 [user]
 	email = ezracitron@gmail.com
-	name = ezra citron
+	name = Ezra Citron
 [init]
 	defaultBranch = main
 [color]
 	ui = true
 [alias]
-    addu = add -u .
+    addu = add -u
 	unstage = reset HEAD
-	untracked = status -u .
+	untracked = status -u
 	untracked-at = status -u
 	assume-unchanged = update-index --assume-unchanged
 	ls = ls-files

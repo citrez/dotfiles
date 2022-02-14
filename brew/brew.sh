@@ -12,3 +12,4 @@ brew install --cask rectangle
 brew install youtube-dl
 brew install ffmpeg
 brew install --cask fliqlo
+brew install bat
