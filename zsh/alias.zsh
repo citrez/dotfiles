@@ -13,7 +13,6 @@ alias eik="code ~/Documents/Everything-I-Know"
 alias d="cd"
 alias dd="cd ~/Documents"
 alias dr="cd ~/Documents/repos"
-alias dh="cd ~/"
 alias dp="cd ~/my_projects"
 
 # NAVIGATION
