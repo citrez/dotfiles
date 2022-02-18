@@ -32,6 +32,7 @@ alias gau="git add -u"
 alias gc="git commit"
 alias gb="git branch"
 alias glg="git log --graph --decorate --oneline --abbrev-commit"
+alias gd="git diff"
 
 # My variables
 export repos="~/Documents/repos"
