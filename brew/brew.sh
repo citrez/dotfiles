@@ -13,3 +13,4 @@ brew install youtube-dl
 brew install ffmpeg
 brew install --cask fliqlo
 brew install bat
+brew install git-gui

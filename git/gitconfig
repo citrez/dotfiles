@@ -35,7 +35,7 @@
     issues = !open "$(git config remote.origin.url)/issues" # open repo's issues in browser
     url =! bash -c 'git config --get remote.origin.url | sed -E "s/.+:\\(.+\\)\\.git$/https:\\\\/\\\\/github\\\\.com\\\\/\\\\1/g"' # show url of remote
 [status]
-	short = true
-	    branch = true
+	short = false
+	    branch = false
 	submoduleSummary = true
 	    showUntrackedFiles = all
