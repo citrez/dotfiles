@@ -1,9 +1,7 @@
-
 alias youtube-dl-audio= "youtube-dl --extract-audio --audio-format mp3"
 alias mve="virtualenv .venv"
 alias sve="source .venv/bin/activate"
 alias c="clear"
-
 
 #EDIT
 alias ea="vim ~/dotfiles/zsh/alias.zsh && source ~/dotfiles/zsh/alias.zsh"
@@ -29,7 +27,7 @@ alias ll="ls -al"
 alias f='open .'
  
 #GIT
-alias gl="git log --oneline"
+alias gl="git log -10 --oneline"
 alias gd="git diff"
 alias gs="git status -sb"
 alias gb="git branch -l"
