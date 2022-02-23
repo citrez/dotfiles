@@ -1,13 +1,14 @@
-
 alias youtube-dl-audio= "youtube-dl --extract-audio --audio-format mp3"
 alias mve="virtualenv .venv"
 alias sve="source .venv/bin/activate"
+alias c="clear"
 
 #EDIT
 alias ea="vim ~/dotfiles/zsh/alias.zsh && source ~/dotfiles/zsh/alias.zsh"
 alias ez="vim ~/dotfiles/zsh/zshrc.zsh  && source ~/dotfiles/zsh/zshrc.zsh"
 alias eb="vim ~/dotfiles/brew/brew.sh  && source ~/dotfiles/zsh/brew.sh"
 alias eg="vim ~/dotfiles/git/gitconfig  && source ~/dotfiles/git/gitconfig"
+alias ev="vim ~/dotfiles/vim/vimrc.vim  && source ~/dotfiles/vim/vimrc.vim"
 alias eik="code ~/Documents/Everything-I-Know"
 
 #DIRECTORY
@@ -26,6 +27,8 @@ alias ll="ls -al"
 alias f='open .'
  
 #GIT
+alias gl="git log -10 --oneline"
+alias gd="git diff"
 alias gs="git status -sb"
 alias gb="git branch -l"
 alias ga="git add"
