@@ -32,6 +32,7 @@ alias ga="git add"
 alias gau="git add -u"
 alias gc="git commit"
 alias gb="git branch"
+alias glo="git log --oneline"
 alias glg="git log --graph --decorate --oneline --abbrev-commit"
 alias gd="git diff"
 
