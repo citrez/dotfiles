@@ -7,6 +7,6 @@ alias clone_data_flow="git clone git@github.com:oodlefinance/oodle-data-flow.git
 #echo "AWS_PROFILE=dev"
 export AWS_PROFILE=dev
 
- export PATH=$HOME/bin:/usr/local/bin:$PATH
- eval "$(pyenv init -)"
- export PATH="$HOME/.poetry/bin:$PATH"
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+eval "$(pyenv init -)"
+export PATH="$HOME/.poetry/bin:$PATH"
