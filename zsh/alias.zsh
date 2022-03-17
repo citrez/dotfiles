@@ -42,6 +42,8 @@ alias gd="git diff"
 # My variables
 export repos="$HOME/Documents/repos/"
 export myprojects="$HOME/Documents/my-projects/"
+export affordability="$HOME/Documents/repos/affordability"
+export policy_rules = "$HOME/Documents/repos/policy_rules"
 
 # Other 
 alias v="vim"
