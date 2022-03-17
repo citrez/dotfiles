@@ -40,8 +40,8 @@ alias glg="git log --graph --decorate --oneline --abbrev-commit"
 alias gd="git diff"
 
 # My variables
-export repos="~/Documents/repos"
-export myprojects="~/Documents/my-projects"
+export repos="$HOME/Documents/repos/"
+export myprojects="$HOME/Documents/my-projects/"
 
 # Other 
 alias v="vim"
