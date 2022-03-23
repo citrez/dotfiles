@@ -24,7 +24,7 @@ function git_branch_name()
 
 
 export CLICOLOR=1
-export LSCOLORS=ExFxBxDxCxegedabagacad
+export LSCOLORS=GxFxCxDxBxegedabagaced
  
 parse_git_branch() {
     git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1]/p'
