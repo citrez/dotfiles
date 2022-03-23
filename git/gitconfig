@@ -7,7 +7,8 @@
 	ui = true
 [alias]
     addu = add -u
-	unstage = reset HEAD
+	cm = commit -m
+    unstage = reset HEAD
 	untracked = status -u
 	untracked-at = status -u
 	assume-unchanged = update-index --assume-unchanged
