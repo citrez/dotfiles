@@ -35,8 +35,9 @@ COLOR_USR='%F{243}'
 COLOR_DIR='%F{197}'
 COLOR_GIT='%F{39}'
 NEWLINE=$'\n'
+PROMPT_DIRTRIM=3
 setopt PROMPT_SUBST
-export PROMPT='${COLOR_DIR}%B%~%b ${COLOR_GIT}$(parse_git_branch)${COLOR_DEF} %% '
+export PROMPT='${COLOR_DIR}%B%(4~|.../%3~|%~)%b ${COLOR_GIT}$(parse_git_branch)${COLOR_DEF} %% '
 
 
 # >>> conda initialize >>>
