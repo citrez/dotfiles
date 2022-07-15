@@ -5,6 +5,8 @@ alias sve="source .venv/bin/activate"
 alias rve="rm -rf .venv"
 
 alias c="clear"
+alias todo="python -m todo_cli"
+alias pip=/usr/local/bin/pip3
 
 #EDIT
 alias ea="vim ~/dotfiles/zsh/alias.zsh && source ~/dotfiles/zsh/alias.zsh"
@@ -43,7 +45,7 @@ alias glg="git log --graph --decorate --oneline --abbrev-commit"
 
 # My variables
 export repos="$HOME/Documents/repos/"
-export myprojects="$HOME/Documents/my-projects/"
+export my_projects="$HOME/my_projects/"
 export snippet2="$HOME/Documents/my-projects/snippets2/src/snippets2"
 
 
