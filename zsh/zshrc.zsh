@@ -39,10 +39,14 @@ export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
-#poetry
-export PATH="$HOME/.poetry/bin:$PATH"
-
 setopt PROMPT_SUBST
 
 # add git autocompletion
 autoload -Uz compinit && compinit
+
+#poetry
+export PATH="$HOME/.poetry/bin:$PATH"
+
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+eval "$(pyenv init -)"
+export PATH="$HOME/.poetry/bin:$PATH"
