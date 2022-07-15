@@ -1,7 +1,6 @@
 clear #remove the last login message
 ## LOAD OTHER FILES, FOR OGANISING
 source  ~/dotfiles/zsh/alias.zsh
-# OODLE
 source ~/dotfiles/zsh/oodle_alias.zsh
 
 # Find and set branch name var if in git repository.
@@ -17,41 +16,33 @@ function git_branch_name()
 }
 
 # Enable substitution in the prompt.
-# setopt prompt_subst
-
 # Config for prompt. PS1 synonym.
 # prompt='%2/ $(git_branch_name) > '
-
-
+# setopt PROMPT_SUBST
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
  
 parse_git_branch() {
     git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1]/p'
 }
- 
+
 COLOR_DEF='%f'
 COLOR_USR='%F{243}'
 COLOR_DIR='%F{197}'
 COLOR_GIT='%F{39}'
 NEWLINE=$'\n'
 PROMPT_DIRTRIM=3
-setopt PROMPT_SUBST
 export PROMPT='${COLOR_DIR}%B%(4~|.../%3~|%~)%b ${COLOR_GIT}$(parse_git_branch)${COLOR_DEF} %% '
 
+# pyenv setup
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/ezracitron/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/ezracitron/opt/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/ezracitron/opt/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/ezracitron/opt/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
+#poetry
+export PATH="$HOME/.poetry/bin:$PATH"
 
+setopt PROMPT_SUBST
+
+# add git autocompletion
+autoload -Uz compinit && compinit
