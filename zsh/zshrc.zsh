@@ -57,3 +57,7 @@ export PROMPT='${COLOR_DIR}%B%(4~|.../%3~|%~)%b ${COLOR_GIT}$(parse_git_branch)$
 
 
 export PATH="$HOME/.poetry/bin:$PATH"
+
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+eval "$(pyenv init -)"
+export PATH="$HOME/.poetry/bin:$PATH"
