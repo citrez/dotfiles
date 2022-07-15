@@ -14,8 +14,4 @@ alias cpp="echo $my_pw|pbcopy" #copy pw
 #echo "AWS_PROFILE=dev"
 export AWS_PROFILE=dev
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
-eval "$(pyenv init -)"
-export PATH="$HOME/.poetry/bin:$PATH"
-
 eval "$(pyenv init -)"
