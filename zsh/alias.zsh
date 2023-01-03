@@ -1,4 +1,4 @@
-alias youtube-dl-audio= "youtube-dl --extract-audio --audio-format mp3"
+# alias youtube-dl-audio= "youtube-dl --extract-audio --audio-format mp3"
 # virtualenv create/activate/remove
 alias mve="virtualenv .venv"
 alias sve="source .venv/bin/activate"
@@ -21,7 +21,7 @@ alias eik="code ~/Documents/Everything-I-Know"
 alias d="cd"
 alias dd="cd ~/Documents"
 alias dr="cd ~/Documents/repos"
-alias dp="cd ~/my_projects"
+alias dp="cd ~/Documents/my-projects"
 
 # NAVIGATION
 alias ..="cd .."
