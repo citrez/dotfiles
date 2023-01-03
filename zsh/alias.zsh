@@ -6,7 +6,7 @@ alias rve="rm -rf .venv"
 
 alias c="clear"
 alias todo="python -m todo_cli"
-alias pip=/usr/local/bin/pip3
+alias pip=pip3
 
 #EDIT
 alias ea="vim ~/dotfiles/zsh/alias.zsh && source ~/dotfiles/zsh/alias.zsh"
