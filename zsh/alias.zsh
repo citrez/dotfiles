@@ -1,12 +1,12 @@
 # alias youtube-dl-audio= "youtube-dl --extract-audio --audio-format mp3"
 # virtualenv create/activate/remove
-alias mve="virtualenv .venv"
+alias mve="python3 -m venv .venv" # alias mve="virtualenv .venv"
 alias sve="source .venv/bin/activate"
 alias rve="rm -rf .venv"
 
 alias c="clear"
 alias todo="python -m todo_cli"
-alias pip=/usr/local/bin/pip3
+# alias pip=/usr/local/bin/pip3
 
 #EDIT
 alias ea="vim ~/dotfiles/zsh/alias.zsh && source ~/dotfiles/zsh/alias.zsh"
