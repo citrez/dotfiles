@@ -17,7 +17,6 @@
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(dim white)(%an)%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 	lg2 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
 	a = apply --index
-	unstage = reset HEAD
 	p = format-patch --stdout
 	co = checkout
 	ci = commit
@@ -26,6 +25,7 @@
 	pr = !open "$(git config remote.origin.url)/pull/new/master" # create new PR
 	re = rebase
 	br = branch
+    br1 = for-each-ref --format='%(committerdate) %09 %(authorname) %09 %(refname)' --sort=committerdate   
 	su = submodule
 	rr = reset
   	fm = fetch-merge # fetch and merge
