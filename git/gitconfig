@@ -26,6 +26,7 @@
 	pr = !open "$(git config remote.origin.url)/pull/new/master" # create new PR
 	re = rebase
 	br = branch
+    br1 = for-each-ref --format='%(committerdate) %09 %(authorname) %09 %(refname)' --sort=committerdate   
 	su = submodule
 	rr = reset
   	fm = fetch-merge # fetch and merge

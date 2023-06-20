@@ -45,8 +45,7 @@ setopt PROMPT_SUBST
 autoload -Uz compinit && compinit
 
 #poetry
-export PATH="$HOME/.poetry/bin:$PATH"
-
+export PATH="$HOME/.local/bin:$PATH"
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 eval "$(pyenv init -)"
 export PATH="$HOME/.poetry/bin:$PATH"
