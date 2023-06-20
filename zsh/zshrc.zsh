@@ -50,3 +50,6 @@ export PATH="$HOME/.poetry/bin:$PATH"
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 eval "$(pyenv init -)"
 export PATH="$HOME/.poetry/bin:$PATH"
+
+export PATH=$PATH:/usr/local/mysql/bin
+
