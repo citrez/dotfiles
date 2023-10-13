@@ -1,4 +1,3 @@
-clear #remove the last login message
 ## LOAD OTHER FILES, FOR OGANISING
 source  ~/dotfiles/zsh/alias.zsh
 source ~/dotfiles/zsh/oodle_alias.zsh
