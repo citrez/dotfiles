@@ -47,7 +47,7 @@ alias glg="git log --graph --decorate --oneline --abbrev-commit"
 # Lean
 alias lcpush="lean cloud push"
 alias lcpull="lean cloud pull"
-alias lrb="learn research backtest"
+alias lrb="lean research backtest"
 
 
 
