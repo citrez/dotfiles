@@ -16,13 +16,13 @@ alias ez="vim ~/dotfiles/zsh/zshrc.zsh  && source ~/dotfiles/zsh/zshrc.zsh"
 alias eb="vim ~/dotfiles/brew/brew.sh  && source ~/dotfiles/zsh/brew.sh"
 alias eg="vim ~/dotfiles/git/gitconfig  && source ~/dotfiles/git/gitconfig"
 alias ev="vim ~/dotfiles/vim/vimrc.vim"
-alias eik="code ~/Documents/Everything-I-Know"
+alias eik="code ~/my_projects/Everything-I-Know"
 
 #DIRECTORY
 alias d="cd"
 alias dd="cd ~/Documents"
 alias dr="cd ~/Documents/repos"
-alias dp="cd ~/Documents/my-projects"
+alias dp="cd ~/my_projects"
 
 # NAVIGATION
 alias ..="cd .."
@@ -43,6 +43,13 @@ alias ga="git add"
 alias gc="git commit"
 # alias gb="git branch"
 alias glg="git log --graph --decorate --oneline --abbrev-commit"
+
+# Lean
+alias lcpush="lean cloud push"
+alias lcpull="lean cloud pull"
+alias lrb="learn research backtest"
+
+
 
 # My variables
 export repos="$HOME/Documents/repos/"
