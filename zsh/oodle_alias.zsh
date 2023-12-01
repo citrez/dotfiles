@@ -1,9 +1,7 @@
-export ds="~/Documents/repos/oodle-data-science-projects"
 
 # oodle
 # alias awslogin="aws-azure-login -a --no-prompt --mode=gui"
 alias awslogin="aws sso login --profile dev"
-alias clone_data_flow="git clone git@github.com:oodlefinance/oodle-data-flow.git"
 export affordability="$HOME/Documents/repos/affordability"
 export policy_rules="$HOME/Documents/repos/policy_rules"
 export oodle_data_flow="$HOME/Documents/repos/oodle-data-flow"

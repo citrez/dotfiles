@@ -1,4 +1,3 @@
-
 ## LOAD OTHER FILES, FOR OGANISING
 source  ~/dotfiles/zsh/alias.zsh
 source ~/dotfiles/zsh/oodle_alias.zsh
@@ -47,3 +46,8 @@ autoload -Uz compinit && compinit
 #poetry
 export PATH="$HOME/.local/bin:$PATH"
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+eval "$(pyenv init -)"
+export PATH="$HOME/.poetry/bin:$PATH"
+
+export PATH=$PATH:/usr/local/mysql/bin
+
