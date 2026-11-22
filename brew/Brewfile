@@ -1,0 +1,26 @@
+# Direct Homebrew formula installs from the current Mac.
+tap "anomalyco/tap"
+brew "actionlint"
+brew "gh"
+brew "gitleaks"
+brew "nmap"
+brew "node@20"
+brew "node@22"
+brew "poetry"
+brew "postgresql@14"
+brew "potrace"
+brew "railway"
+brew "uv"
+
+# Homebrew casks currently installed on the current Mac.
+cask "anomaly-hex"
+cask "autodesk-fusion"
+cask "bambu-studio"
+cask "chatgpt"
+cask "db-browser-for-sqlite"
+cask "anomalyco/tap/hex", trusted: true
+cask "obsidian"
+cask "prusaslicer"
+cask "scroll-reverser"
+cask "slack"
+cask "visual-studio-code"

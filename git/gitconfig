@@ -1,44 +1,16 @@
 [user]
-	email = ezracitron@gmail.com
 	name = Ezra Citron
+	email = ezracitron@gmail.com
 [init]
 	defaultBranch = main
 [color]
-	ui = true
+	ui = auto
 [alias]
-    addu = add -u
 	cm = commit -m
-    unstage = reset HEAD
-	untracked = status -u
-	untracked-at = status -u
-	assume-unchanged = update-index --assume-unchanged
-	ls = ls-files
-    lgo = log --oneline -n 10 
-    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(dim white)(%an)%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
-	lg2 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
-	a = apply --index
-	unstage = reset HEAD
-	p = push
-    co = checkout
-	ci = commit
-	cp = cherry-pick
-	me = merge
-	pr = !open "$(git config remote.origin.url)/pull/new/master" # create new PR
-	re = rebase
+	co = checkout
 	br = branch
-    br1 = for-each-ref --format='%(committerdate) %09 %(authorname) %09 %(refname)' --sort=committerdate   
-	su = submodule
-	rr = reset
-  	fm = fetch-merge # fetch and merge
-    tree = log --graph --pretty=format:'%C(auto)%h - %s [%an] (%C(blue)%ar)%C(auto)%d'
-    bigtree = log --graph --decorate --pretty=format:'%C(auto)%d%n%h %s%+b%n(%G?) %an <%ae> (%C(blue)%ad%C(auto))%n'
-    hist = log --date=short --pretty=format:'%C(auto)%ad %h (%G?) %s [%an] %d'
-    count = shortlog -sn  # give list of who commited to this repo
-    open = !open `git config remote.origin.url` # open repo in browser
-    issues = !open "$(git config remote.origin.url)/issues" # open repo's issues in browser
-    url =! bash -c 'git config --get remote.origin.url | sed -E "s/.+:\\(.+\\)\\.git$/https:\\\\/\\\\/github\\\\.com\\\\/\\\\1/g"' # show url of remote
+	unstage = restore --staged
+	last = log -1 HEAD
+	lg = log --graph --decorate --oneline --all
 [status]
-	short = false
-	    branch = false
-	submoduleSummary = true
-	    showUntrackedFiles = all
+	showUntrackedFiles = all
